@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/title" />
+
+
+    <LinearLayout
+        android:id="@+id/Connected"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_below="@+id/titleLayout"
+        android:background="@color/default_color"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <ProgressBar
+
+            android:id="@+id/progressBar_header"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+
+        <TextView
+            android:id="@+id/connectedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/go12"
+            android:layout_width="50px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="40px"
+            android:src="@mipmap/btn_arrow1_w36_n2x" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mCommonTabLayout"
+        android:layout_below="@+id/Connected" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/framelayout"
+        android:background="@color/list_gray" />
+
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/mCommonTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_alignParentBottom="true"
+        app:tl_iconGravity="TOP"
+        app:tl_iconHeight="60px"
+        app:tl_iconWidth="60px"
+        app:tl_indicator_color="@color/flyBlue"
+        app:tl_indicator_gravity="BOTTOM"
+        app:tl_indicator_style="TRIANGLE"
+        app:tl_textBold="SELECT"
+        app:tl_textSelectColor="@color/flyBlue"
+        app:tl_textUnselectColor="@color/gray" />
+
+
+</RelativeLayout>

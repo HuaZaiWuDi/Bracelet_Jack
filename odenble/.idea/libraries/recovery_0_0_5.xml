@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="recovery-0.0.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../app/build/intermediates/exploded-aar/com.zxy.android/recovery/0.0.5/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../app/build/intermediates/exploded-aar/com.zxy.android/recovery/0.0.5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zxy.android/recovery/0.0.5/5d423c4b4adf7d01ae393399e59ab0f5033a5a81/recovery-0.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

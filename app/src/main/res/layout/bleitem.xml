@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_centerVertical="true"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            app:srcCompat="@drawable/svg_ble" />
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/img"
+            android:id="@+id/bleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="30px"
+            android:text="BleName"
+            android:textSize="35px" />
+
+        <TextView
+            android:layout_toRightOf="@+id/img"
+            android:id="@+id/bleAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bleName"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="10px"
+            android:text="BleAddr" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

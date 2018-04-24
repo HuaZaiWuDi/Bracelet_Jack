@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="help_title">
+        <item>Why can it my handset connect to the handset？</item>
+        <item>My cell phone can it search the handset？</item>
+        <item>I can it get the message of my ring？</item>
+        <item>What should be paid attention to using heart rate monitoring？</item>
+        <item>What do you do with the serious power consumption of the hand ring？</item>
+        <item>Can my ring be recharged with a mobile power？</item>
+        <item>Can my ring be charged with a quick charger？</item>
+        <item>How to use the alarm clock？</item>
+        <item>Hints about data？</item>
+        <item>How to contact us？</item>
+    </string-array>
+
+    <string-array name="hlep_text">
+        <item>If you cannot connect the mobile phone ring, please try the following: \n (1) please make sure that the bracelet is on \n; (2) check the mobile phone Bluetooth is enabled; \n (3) Android users please ensure that the app in the background of application, we recommend app added to the protected application after Taiwan in;
+\n (4) bracelet can it connect automatically. Please click the search device to add it again; \n (5). If the cell phone is not connected, please turn off the cell phone Bluetooth, re open it, or quit the application device to re-enter and try to connect.</item>
+        <item>If your mobile phone can it search the bracelet, please try the following: \n (1) to ensure the bracelet has power, and the bracelet not connected to any other device or connection of the app; \n (2) attempt to close the mobile phone Bluetooth switch and then open in \n; (3) try to restart the \n bracelet; (4) if you are apple IOS user please
+Ignore this bracelet equipment mobile phone Bluetooth devices list (system settings - > Bluetooth ->XXXX-> ignore this equipment), then reconnect \n; (5) if you are a Android user and your mobile phone is more than android5.0, you must open the location service to search for Bluetooth devices (settings - > location services); \n
+(6) if none of the above has no effect, please try to restart the phone.</item>
+        <item>If you have not received notification bracelet, please try the following: \n (1) please make sure that the bracelet and mobile phone connection is normal, and normal data synchronization; \n (2) to open the app, check the message push function is open; \n (3) if you are Android, please ensure that the received message notification the permissions are open
+(settings - > message notification ->app-> open); \n (4) Android users to ensure that the app is in use or in the background in the list, that added to the mobile phone protected background applications.</item>
+        <item>Heart rate monitoring should be paid attention to: \n (1) when monitoring heart rate, please ensure that the hand ring is close to the arm, so that the accuracy of heart rate data can be ensured.</item>
+        <item>If you hand power seriously, try the following methods: (1) \n Bracelet light up the screen more than the screen power consumption, such as not often need to see the screen, please close the hand bright screen; \n (2) mobile phone often disconnected reconnection will consume a lot of power, do not need to use the bracelet please disconnect.</item>
+        <item>No \n mobile power charging object is usually a cell phone, the charging current is large, and the bracelet charging is 60mA is small current charging, which will make some of the mobile power wrongly think that it is to charge the phone, so that it closes the charging.</item>
+        <item>No</item>
+        <item>(1) the alarm clock equipment is immediately effective, after setting, the handset does not need to be connected to the mobile phone, and it can also be prompted by normal vibration; \n</item>
+        <item>Step count, sleep and heart rate data are kept on the mobile phone. If there are operations such as uninstalling app (except for upgrade and installation), replacing mobile phones, clearing app data and changing bracelet, all data will be lost.</item>
+        <item>Welcome to inquire: 0755-28168579 \n mailbox address: dxylab@dxytech.com</item>
+    </string-array>
+
+</resources>

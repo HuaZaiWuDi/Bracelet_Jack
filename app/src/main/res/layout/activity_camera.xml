@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <SurfaceView
+        android:id="@+id/mSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/bright"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="30px"
+            android:src="@mipmap/camera_flash_off" />
+
+        <ImageView
+            android:id="@+id/camera_flip"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_margin="30px"
+            android:src="@mipmap/camera_flip" />
+
+
+        <ImageView
+            android:id="@+id/takePhoto"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30px"
+            android:src="@mipmap/ic_take_none" />
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="120px"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="70px"
+            android:src="@mipmap/back" />
+
+
+        <com.lab.dxy.bracelet.ui.RecordView
+            android:id="@+id/mRecordView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/img_album"
+            android:layout_width="130px"
+            android:layout_height="130px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="70px" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

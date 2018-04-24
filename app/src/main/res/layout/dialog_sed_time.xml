@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_background"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20px"
+        android:text="@string/settingSed"
+        android:textColor="@color/flyBlue" />
+
+
+    <LinearLayout
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_below="@+id/title"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <com.lab.dxy.bracelet.ui.PickerView
+            android:id="@+id/min"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:text="min"
+            android:textColor="@color/button_yellow" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/time"
+        android:background="@color/list_gap_gray" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@+id/time"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ok"
+            android:layout_weight="1"
+            android:background="@drawable/selector_text"
+            android:gravity="center"
+            android:text="@string/cancel" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/list_gap_gray" />
+
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:background="@drawable/selector_text"
+            android:gravity="center"
+            android:text="@string/ok" />
+
+    </LinearLayout>
+
+</RelativeLayout>

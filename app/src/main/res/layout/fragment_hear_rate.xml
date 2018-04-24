@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:layout_marginTop="50px">
+
+                <ImageView
+                    android:id="@+id/hearRate"
+                    android:layout_width="400px"
+                    android:layout_height="400px"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/heart" />
+
+
+                <com.lab.dxy.bracelet.ui.HeartRateLineView
+                    android:id="@+id/mHeartRateLineView"
+                    android:layout_width="match_parent"
+                    android:layout_height="400px" />
+
+            </FrameLayout>
+
+
+            <Button
+                android:id="@+id/btn_heartRate"
+                android:layout_width="300px"
+                android:layout_height="100px"
+                android:layout_below="@+id/frame"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40px"
+                android:background="@drawable/select_button_green"
+                android:text="开始测量"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/lastHeartRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150px"
+                android:text="心率监测"
+                android:textColor="@color/white"
+                android:textSize="40px" />
+
+
+            <TextView
+                android:id="@+id/text_heartRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastHeartRate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="40px" />
+
+            <ImageView
+                android:id="@+id/historyHeartRate"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_alignParentRight="true"
+                android:layout_margin="50px"
+                android:src="@mipmap/heart_rate" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:layout_below="@+id/btn_heartRate"
+                android:layout_margin="20px"
+                android:text="心率参考值：" />
+
+
+            <com.lab.dxy.bracelet.ui.HeartRateRound
+                android:id="@+id/hearRateRound"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_below="@+id/btn_heartRate"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="50px" />
+
+            <LinearLayout
+                android:id="@+id/textLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hearRateRound"
+                android:layout_marginBottom="40px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="未运动"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="轻微运动"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="中度运动"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="激烈运动"
+                    android:textSize="20px" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLinear"
+                android:layout_margin="30px"
+                android:text="历史记录：" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/text"
+                android:focusableInTouchMode="true" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

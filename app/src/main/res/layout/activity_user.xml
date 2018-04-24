@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+
+    <ImageView
+        android:id="@+id/bg_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/title"
+        android:scaleType="fitXY" />
+
+    <com.lab.dxy.bracelet.ui.CircleImageView
+        android:id="@+id/userImg"
+        android:layout_width="240px"
+        android:layout_height="240px"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px" />
+
+
+    <TextView
+        android:id="@+id/BraName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:textSize="35px"
+        android:visibility="gone" />
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/BraName"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="150px"
+        android:background="@color/list_gray" />
+
+
+    <RelativeLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@+id/view1"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="昵称"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/userNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:layout_toLeftOf="@+id/go"
+            android:text="小狼崽"
+            android:textSize="25px" />
+
+        <ImageView
+            android:id="@+id/go"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_arrow1_w36_n2x" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/name"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/list_gray" />
+
+
+    <RelativeLayout
+        android:id="@+id/sex"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@+id/view2">
+
+        <TextView
+            android:id="@+id/userSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="@string/sex"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/userSexText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:layout_toLeftOf="@+id/go1"
+            android:text="男"
+            android:textSize="25px" />
+
+        <ImageView
+            android:id="@+id/go1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_arrow1_w36_n2x" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/sex"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/list_gray" />
+
+
+    <RelativeLayout
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@+id/view3">
+
+        <TextView
+            android:id="@+id/userDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="@string/age"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/userDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:layout_toLeftOf="@+id/go2"
+            android:text="22岁"
+            android:textSize="25px" />
+
+        <ImageView
+            android:id="@+id/go2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_arrow1_w36_n2x" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/date"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/list_gray" />
+
+
+    <RelativeLayout
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@+id/view4">
+
+        <TextView
+            android:id="@+id/userHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="@string/height"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/userHeightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:layout_toLeftOf="@+id/go3"
+            android:text="173cm"
+            android:textSize="25px" />
+
+        <ImageView
+            android:id="@+id/go3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_arrow1_w36_n2x" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/height"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/list_gray" />
+
+
+    <RelativeLayout
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@+id/view5">
+
+        <TextView
+            android:id="@+id/userWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="@string/weight"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/userWeightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:layout_toLeftOf="@+id/go5"
+            android:text="60Kg"
+            android:textSize="25px" />
+
+        <ImageView
+            android:id="@+id/go5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_arrow1_w36_n2x" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/weight"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/list_gray" />
+
+    <RelativeLayout
+        android:id="@+id/stepsArm"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@+id/view6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="@string/stepsArm"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/text_StepsArm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:layout_toLeftOf="@+id/go11"
+            android:text="0"
+            android:textSize="25px" />
+
+        <ImageView
+            android:id="@+id/go11"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_arrow1_w36_n2x" />
+
+    </RelativeLayout>
+
+
+    <View
+
+        android:id="@+id/view7"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/stepsArm"
+        android:layout_centerInParent="true"
+        android:background="@color/list_gray" />
+
+
+    <Button
+        android:id="@+id/UnBind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30px"
+        android:background="@drawable/select_button_red"
+        android:text="@string/unBind"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+
+
+</RelativeLayout>

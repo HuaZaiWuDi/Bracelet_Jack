@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/text_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="55px" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_hour"
+        android:layout_marginBottom="5px"
+        android:layout_toRightOf="@+id/text_hour"
+        android:text="时"
+        android:textColor="#BAB7BF"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/text_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="55px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_min"
+        android:layout_marginBottom="5px"
+        android:layout_toRightOf="@+id/text_min"
+        android:text="分"
+        android:textColor="#BAB7BF"
+        android:textSize="30px" />
+
+</RelativeLayout>

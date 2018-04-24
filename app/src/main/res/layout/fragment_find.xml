@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="650px">
+
+                <ImageView
+                    android:id="@+id/bg_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gradient_blue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.flyco.tablayout.SegmentTabLayout
+                        android:id="@+id/mSlidingTabLayout"
+                        android:layout_width="300dp"
+                        android:layout_height="35dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30px"
+                        app:tl_indicator_color="@color/white"
+                        app:tl_indicator_corner_radius="5dp"
+                        app:tl_indicator_style="BLOCK"
+                        app:tl_textSelectColor="@color/black"
+                        app:tl_textUnselectColor="@color/gray"
+                        app:tl_textsize="15sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/Left"
+                            android:layout_width="100px"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/Title"
+                            android:src="@mipmap/detail_left_arrow2x" />
+
+
+                        <TextView
+                            android:id="@+id/Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerInParent="true"
+                            android:text="@string/Today"
+                            android:textColor="@color/white"
+                            android:textSize="30px" />
+
+
+                        <ImageView
+                            android:id="@+id/Right"
+                            android:layout_width="100px"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/Title"
+                            android:src="@mipmap/detail_right_arrow2x" />
+
+                    </RelativeLayout>
+
+
+                    <com.lab.dxy.bracelet.ui.HistogramView
+                        android:id="@+id/mHistogramView"
+                        android:layout_width="match_parent"
+                        android:layout_height="450px"
+                        android:layout_margin="20px" />
+
+
+                    <lecho.lib.hellocharts.view.ColumnChartView
+                        android:id="@+id/mColumnChartView"
+                        android:layout_width="match_parent"
+                        android:layout_height="450px"
+                        android:layout_margin="20px"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+                <!--加载动画-->
+                <LinearLayout
+                    android:id="@+id/loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="600px"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:layout_width="50px"
+                        android:layout_height="20px"
+                        android:layout_marginTop="40px"
+                        android:indeterminateDrawable="@drawable/loading" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/noData"
+                    android:layout_width="match_parent"
+                    android:layout_height="600px"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/text_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16px"
+                        android:text="@string/noSleepData"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_centerInParent="true"
+                android:background="@color/list_gray" />
+
+            <com.lab.dxy.bracelet.ui.myGridView
+                android:id="@+id/mGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="30px"
+                android:background="@color/white"
+                android:clipToPadding="true"
+                android:numColumns="2"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:layout_below="@+id/mRoundIndicatorView">
+
+
+                <RelativeLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_1"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_above="@+id/text_1"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/icon_asleep" />
+
+                    <TextView
+                        android:id="@+id/text_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10px"
+                        android:text="@string/asleepTime"
+                        android:textColor="#BAB7BF" />
+
+
+                    <TextView
+                        android:id="@+id/textData_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_1"
+                        android:layout_centerHorizontal="true"
+                        android:text="23:00"
+                        android:textColor="@color/flyBlue"
+                        android:textSize="50px" />
+
+
+                    <TextView
+                        android:id="@+id/childUnit_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textData_1"
+                        android:layout_toRightOf="@+id/textData_1"
+                        android:text="时间"
+                        android:textColor="#BAB7BF"
+                        android:textSize="30px"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_2"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_above="@+id/text_2"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/icon_restless" />
+
+                    <TextView
+                        android:id="@+id/text_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10px"
+                        android:text="@string/restlessTime"
+                        android:textColor="#BAB7BF" />
+
+
+                    <TextView
+                        android:id="@+id/textData_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_2"
+                        android:layout_centerHorizontal="true"
+                        android:text="23:00"
+                        android:textColor="@color/flyBlue"
+                        android:textSize="50px" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20px"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_3"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_above="@+id/text_3"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/icon_awake" />
+
+                    <TextView
+                        android:id="@+id/text_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10px"
+                        android:text="@string/awakeTime"
+                        android:textColor="#BAB7BF" />
+
+
+                    <TextView
+                        android:id="@+id/textData_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_3"
+                        android:layout_centerHorizontal="true"
+                        android:text="23:00"
+                        android:textColor="@color/flyBlue"
+                        android:textSize="50px" />
+
+
+                    <TextView
+                        android:id="@+id/childUnit_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textData_3"
+                        android:layout_toRightOf="@+id/textData_3"
+                        android:text="kcal"
+                        android:textColor="#979498"
+                        android:textSize="30px"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/childUnit_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="116dp"
+                        android:text="km"
+                        android:textColor="#BAB7BF"
+                        android:textSize="30px"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_centerInParent="true"
+                android:background="@color/list_gray" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_marginTop="30px"
+                android:text="@string/SleepTips"
+                android:textColor="@color/flyBlue"
+                android:textSize="25px" />
+
+            <TextView
+                android:id="@+id/text_bom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15px"
+                android:textSize="20px" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110px"
+    android:paddingBottom="20px"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/state"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_state"
+            android:layout_width="60px"
+            android:layout_height="60px" />
+
+        <TextView
+
+            android:id="@+id/text_state"
+            android:text="@string/state"
+            android:textSize="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/find"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_find"
+            android:layout_width="60px"
+            android:layout_height="60px" />
+
+        <TextView
+            android:id="@+id/text_find"
+            android:text="@string/find"
+            android:textSize="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/play"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="60px"
+            android:layout_height="60px" />
+
+        <TextView
+            android:id="@+id/text_play"
+            android:text="@string/play"
+            android:textSize="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/mine"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_mine"
+            android:layout_width="60px"
+            android:layout_height="60px" />
+
+        <TextView
+            android:id="@+id/text_mine"
+            android:text="@string/mine"
+            android:textSize="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

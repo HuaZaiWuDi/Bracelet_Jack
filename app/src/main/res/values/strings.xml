@@ -1,0 +1,309 @@
+<resources>
+    <string name="app_name">DXY-手环</string>
+    <string name="bleBra">蓝牙手环</string>
+
+    <string name="find">睡眠</string>
+    <string name="play">酷玩</string>
+    <string name="mine">我的</string>
+    <string name="state">运动</string>
+    <string name="heartRate">心率</string>
+    <string name="cancel">取消</string>
+    <string name="nextUpdate">下次更新</string>
+    <string name="stepsCount">计步统计</string>
+    <string name="UserInfo">个人信息</string>
+    <string name="sleepDate">睡眠时间</string>
+    <string name="Intelligence">智能闹钟</string>
+    <string name="ANCS">消息提醒</string>
+    <string name="help">帮助</string>
+
+    <string name="ok">确定</string>
+
+    <string name="Mon">周一</string>
+    <string name="Tue">周二</string>
+    <string name="Wed">周三</string>
+    <string name="Thu">周四</string>
+    <string name="Fri">周五</string>
+    <string name="Sat">周六</string>
+    <string name="Sun">周天</string>
+    <string name="Never">仅提醒一次</string>
+    <string name="Every">每天</string>
+
+
+    <string-array name="bottomTitle">
+        <item>@string/state</item>
+        <item>@string/find</item>
+        <item>@string/heartRate</item>
+        <item>@string/play</item>
+        <item>@string/mine</item>
+    </string-array>
+
+    <string-array name="week">
+        <item>@string/Sun</item>
+        <item>@string/Mon</item>
+        <item>@string/Tue</item>
+        <item>@string/Wed</item>
+        <item>@string/Thu</item>
+        <item>@string/Fri</item>
+        <item>@string/Sat</item>
+    </string-array>
+
+    <string-array name="sports">
+        <item>计步距离</item>
+        <item>消耗能量</item>
+        <item>运动时长</item>
+        <item>今日目标</item>
+    </string-array>
+
+    <string-array name="sleep">
+        <item>深睡时长</item>
+        <item>浅睡时长</item>
+        <item>清醒时间</item>
+        <item>睡眠质量</item>
+    </string-array>
+    <string-array name="setting">
+        <item>查找手环</item>
+        <item>@string/Photograph</item>
+        <item>设置</item>
+        <item>关于我们</item>
+        <item>@string/help</item>
+    </string-array>
+
+    <string name="Photograph">智能拍照</string>
+    <string name="ChoosePhotographMode">请选择拍照模式</string>
+    <string name="keyPhotograph">按键拍照</string>
+    <string name="shakePhotograph">摇一摇拍照</string>
+    <string name="choosePhoto">选择头像</string>
+    <string name="choosePhotoMode">请选择头像获取方式</string>
+
+
+    <string-array name="photoMode">
+        <item>@string/keyPhotograph</item>
+        <item>@string/shakePhotograph</item>
+    </string-array>
+
+
+    <string-array name="about">
+        <item>更新应用</item>
+        <item>固件升级</item>
+        <item>恢复出厂设置</item>
+        <item>@string/aboutUs</item>
+    </string-array>
+
+
+    <string-array name="ANCS">
+        <item>来电提醒</item>
+        <item>短信提醒</item>
+        <item>whatsApp</item>
+        <item>微信提醒</item>
+        <item>QQ提醒</item>
+    </string-array>
+    <string-array name="function">
+        <item>久坐提醒</item>
+        <item>抬手亮屏</item>
+        <item>防丢提醒</item>
+        <item>熄屏提醒</item>
+        <item>消息提醒</item>
+        <item>睡眠检测</item>
+        <item>智能闹钟</item>
+        <item>摇一摇拍照模式</item>
+    </string-array>
+
+    <string-array name="takePhoto">
+        <item>灵敏</item>
+        <item>中等</item>
+        <item>迟钝</item>
+    </string-array>
+
+
+    <string-array name="alarm_mode">
+        <item>没有事件</item>
+        <item>马达震动</item>
+        <item>LED闪烁(预留)</item>
+        <item>闹铃(预留)</item>
+    </string-array>
+
+    <string-array name="appPush">
+        <item>没有事件</item>
+        <item>点屏</item>
+        <item>马达震动</item>
+        <item>LED闪烁(预留)</item>
+        <item>闹铃(预留)</item>
+    </string-array>
+
+    <string-array name="negativeMarkArray">
+        <item>21:00</item>
+        <item>23:00</item>
+        <item>01:00</item>
+        <item>04:00</item>
+        <item>08:00</item>
+    </string-array>
+
+
+    <string-array name="user_sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+
+    <string name="bleClose">蓝牙已经关闭，请开启后再连接</string>
+    <string name="bleCloseAndScan">蓝牙已经关闭
+        请开启后再扫描</string>
+    <string name="barIsDisconnect">手环没有连接！！！点击搜索新设备</string>
+    <string name="disConnect_reConnect">已停止重连，请搜索设备重新连接</string>
+    <string name="barNoNear">手环不在附近注意防丢！！</string>
+    <string name="Beyond_connection_distance">超出连接距离</string>
+    <string name="reconnecting">重新连接</string>
+    <string name="connecting">正在连接</string>
+    <string name="reconnect_success">连接成功</string>
+    <string name="startScan">开始扫描</string>
+    <string name="stopScan">停止扫描</string>
+    <string name="timeOutScan">扫描超时</string>
+    <string name="doFail_reconnect">操作失败，正在重连</string>
+    <string name="barConnect">手环已连接</string>
+    <string name="barDisConnect">手环未连接</string>
+    <string name="bra_disconnect">手环未连接</string>
+
+    <string name="settingAlarmSuccess">设置成功</string>
+    <string name="settingAlarmFail2">时间相同，请选择设置时间</string>
+    <string name="settingAlarm">设置闹钟</string>
+    <string name="synAlarm">同步闹钟</string>
+    <string name="SDNoUse">无法获取到SD卡存储</string>
+
+
+    <string name="rice">米</string>
+    <string name="openLoactionpermission">必须给予定位权限才能扫描到手环哦</string>
+    <string name="NoNet">没有网络信号</string>
+    <string name="settingNet">请设置网络信号</string>
+
+    <string name="deleteSuccess">删除成功</string>
+
+    <string name="settingUserInfo">请设置性别</string>
+    <string name="settingHeight">请设置身高</string>
+    <string name="settingWeight">请设置体重</string>
+    <string name="settingAge">请设置年龄</string>
+    <string name="settingSteps">请设置目标步数</string>
+
+    <string name="hint">提示</string>
+    <string name="isDelete">是否删除？</string>
+
+    <string name="on">已开启</string>
+    <string name="off">未开启</string>
+
+    <string name="appscan">App二维码</string>
+    <string name="Sacn_QR_code">扫描此二维码便可以下载App</string>
+
+    <string name="findNewVersion">发现新版本</string>
+    <string name="downloadapp">升级APP</string>
+    <string name="downloadbin">升级OTA</string>
+    <string name="otaMessage">ota升级会重启手环，可能会丢失记步信息
+              版本信息：</string>
+    <string name="wait_download">等待下载中</string>
+
+    <string name="load_fail">升级失败</string>
+    <string name="load_success">升级成功</string>
+
+    <string name="applicationInfo"> 版本信息 : %1$s \n版本号：%2$s \n新版本大小：%3$s M</string>
+    <string name="restartFactory">正在恢复出厂设置</string>
+    <string name="news_version">已经是最新版本</string>
+    <string name="network_fail">联网失败</string>
+
+
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="action_settings">设置</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="unBind">解绑手环</string>
+
+    <string name="nameisLong">输入过长</string>
+    <string name="InputTrue">请输入正确数值</string>
+    <string name="InputSuccess">输入成功</string>
+    <string name="InputFail">输入失败</string>
+
+    <string name="NoPermission">没有权限</string>
+
+    <string name="sleepMessage">\t\t睡眠最理想的时间是晚上9点至凌晨2点，这是因为人的睡眠大约每两小时为一节，第一节睡得最沉，第二节稍浅，第三，第四节愈浅，而前二节四小时的睡眠量占总睡眠量的75%
+        。同时，每天睡午觉也很必要。午睡对消除疲劳，增进健康非常有益，第一项自我保健措施午睡时间一般半小时左右为宜，否则会影响晚上睡眠</string>
+    <string name="sleepStatusBad">较差</string>
+    <string name="sleepStatusFine">良好</string>
+    <string name="sleepStatusGood">优秀</string>
+    <string name="sleepQuality">睡眠质量：%1$s</string>
+
+    <string name="function">功能</string>
+    <string name="modular">模块</string>
+    <string name="uninstall">未安装该应用，请安装后再开启</string>
+    <string name="SimNoUse">电话卡无法使用，请插入有效的电话卡后再开启</string>
+
+    <string name="ANCS_Message">使用消息提醒功能必须开启应用通知栏管理例如：\n接收QQ消息,需要开启QQ消息提醒功能\n
+        若开启还未收到消息，试着重启手机
+    </string>
+
+    <string name="startTime">开始时间</string>
+    <string name="endTime">结束时间</string>
+    <string name="sex">性别</string>
+    <string name="age">年龄</string>
+    <string name="height">身高</string>
+    <string name="weight">体重</string>
+    <string name="stepsArm">目标步数</string>
+    <string name="stepsData">计步数据</string>
+    <string name="sleepData">睡眠数据</string>
+    <string name="heartRateData">心率数据</string>
+    <string name="steps">步</string>
+    <string name="score">评分</string>
+    <string name="stepsTime">运动时长</string>
+    <string name="stepsKm">运动里程</string>
+    <string name="stepsKcal">运动消耗</string>
+    <string name="startSleep">入睡</string>
+    <string name="endSleep">醒来</string>
+    <string name="aSleep">深睡</string>
+    <string name="todaySteps">今日运动步数</string>
+    <string name="dynamicHeart">动态心率</string>
+    <string name="staticHeart">静态心率</string>
+    <string name="averageHeart">平均心率</string>
+
+    <string name="factoryAPP">是否恢复出厂设置？
+       出厂设置将清除app保存的用户信息，以及更改手环mac地址</string>
+    <string name="tackPhoto">正在拍照</string>
+    <string name="alarm_set_up">手环最多只能设置%1$d个闹钟</string>
+
+    <string name="Today">今天</string>
+    <string name="noSleepData">没有睡眠数据</string>
+    <string name="day">日</string>
+    <string name="week">周</string>
+    <string name="month">月</string>
+    <string name="SleepTips">睡眠小贴士</string>
+    <string name="daySteps">日均步数</string>
+    <string name="TotalKm">总里程</string>
+    <string name="Standard">达标天数</string>
+    <string name="AddDevice">查找设备</string>
+    <string name="myDevice">我的设备</string>
+    <string name="changeByAlbum">从相册中选择</string>
+    <string name="takePhoto">拍照</string>
+    <string name="addClock">添加闹钟</string>
+    <string name="ChooseWeek">选择星期</string>
+    <string name="settingSed">设置久坐提醒</string>
+    <string name="settingFail">操作失败</string>
+    <string name="downloadSuccess">成功下载到手机相册</string>
+    <string name="shareSuccess">分享成功</string>
+    <string name="shareFail">分享失败</string>
+    <string name="hour">时</string>
+    <string name="min">分</string>
+    <string name="stepsSuccess">目标已经完成</string>
+    <string name="sleepDataWait">睡眠时间结束之后再获取数据</string>
+    <string name="sleepDataWaitAndRevise">现在是睡眠监测时间，如果仍要修改，睡眠数据将重新获取</string>
+    <string name="sleepDataError">睡眠时间起始和终止时间不能设置在早上%1$d点到晚上%2$d点之间哦</string>
+    <string name="callOurs">联系我们: %1$s \n邮箱地址: %2$s</string>
+    <string name="sleepNoSame">睡眠时间不能相同</string>
+    <string name="startBeforeEnd">开始时间不能在当前时间之前</string>
+    <string name="NoWearBra">未佩戴手环</string>
+    <string name="autoConnect">自动连接</string>
+    <string name="connectOnce">连接一次</string>
+    <string name="heartRateUnit">次/分</string>
+    <string name="aboutUs">关于我们</string>
+    <string name="DistanceTime">距离闹钟响起还有%1$d小时%2$d分</string>
+    <string name="startSynData">开始同步数据</string>
+    <string name="synDataSuccess">同步数据完成</string>
+    <string name="asleepTime">深睡时长</string>
+    <string name="restlessTime">浅睡时长</string>
+    <string name="awakeTime">清醒时长</string>
+    <string name="noChange">没有改变</string>
+</resources>

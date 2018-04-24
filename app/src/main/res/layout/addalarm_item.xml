@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:padding="20px">
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="07:00"
+            android:textSize="55px" />
+
+
+        <TextView
+            android:id="@+id/time_am"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/time"
+            android:layout_toRightOf="@+id/time"
+            android:text="上午"
+            android:textSize="20px"
+            android:visibility="gone" />
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50px"
+            android:layout_toRightOf="@+id/time_am"
+            android:background="@color/gray" />
+
+
+        <TextView
+            android:id="@+id/week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@+id/view1"
+            android:text="周五"
+            android:textSize="30px" />
+
+
+        <TextView
+            android:id="@+id/mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/week"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@+id/view1"
+            android:text="闹灯"
+            android:textSize="25px"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/week"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@+id/mode"
+            android:text="一次"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/img_enable"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:src="@mipmap/slip_switch_on" />
+
+
+    </RelativeLayout>
+</LinearLayout>

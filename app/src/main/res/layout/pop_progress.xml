@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30px">
+
+
+    <com.lab.dxy.bracelet.ui.RxSeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cellMode="other"
+        app:cells="2"
+        app:hideProgressHint="true"
+        app:lineColorEdge="@color/gray"
+        app:lineColorSelected="@color/button_green_press"
+        app:markTextArray="@array/takePhoto"
+        app:maxProgress="2"
+        app:minProgress="0"
+        app:seekBarHeight="10dp"
+        app:seekBarMode="single"
+        app:textPadding="20dp"
+        app:thumbSize="35dp" />
+
+
+</RelativeLayout>

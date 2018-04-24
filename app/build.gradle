@@ -1,0 +1,163 @@
+apply plugin: 'com.android.application'
+def AAVersion = '4.4.0'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.lab.dxy.bracelet"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 37
+        versionName "2.37.180109"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        flavorDimensions "versionCode"
+
+        //  替换成你的qq_id
+        manifestPlaceholders = [
+                qq_id: "1106404886"
+        ]
+
+//        //修改apk名字
+//        android.applicationVariants.all { variant ->
+//            variant.outputs.each { output ->
+//                def outputFile = output.outputFile
+//                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                    //这里修改apk文件名
+//                    def fileName = "DXY-手环_${defaultConfig.versionName}.apk"
+//                    output.outputFile = new File(outputFile.parent, fileName)
+//                }
+//            }
+//        }
+
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+
+    buildTypes {
+
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "USE_CANARY", "false"
+            minifyEnabled true //混淆打包
+            shrinkResources true//去掉不用资源
+            zipAlignEnabled false //压缩
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "USE_CANARY", "true"
+            minifyEnabled false //混淆打包
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // Ensure the no-op dependency is always used in JVM tests.
+    // || config.name.contains('AndroidTest')
+    configurations.all { config ->
+        if (config.name.contains('UnitTest')) {
+            config.resolutionStrategy.eachDependency { details ->
+                if (details.requested.group == 'com.squareup.leakcanary' && details.requested.name == 'leakcanary-android') {
+                    details.useTarget(group: details.requested.group, name: 'leakcanary-android-no-op', version: details.requested.version)
+                }
+            }
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //注解
+    annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
+    implementation "org.androidannotations:androidannotations-api:$AAVersion"
+
+    compile project(path: ':odenble')
+
+    //数据库
+    compile files('libs/activeandroid-3.1-beta.jar')
+
+    //文字滚动条
+    compile project(':ota_module')
+    compile files('libs/locSDK_6.03.jar')
+
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    //弘扬的自定义布局
+    compile 'com.zhy:autolayout:1.4.5'
+
+    //rx retrofit
+    //    compile 'io.reactivex:rxandroid:1.1.0'
+    //    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    compile 'com.artemzin.rxjava:proguard-rules:1.1.0.0'
+
+    //Glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    //进度条
+    compile 'com.github.autume:CircleProgressDialog:1.0.2'
+//    //三图形切换动画
+//    compile 'com.github.zzz40500:android-shapeLoadingView:1.0.3.2'
+    //https://github.com/chaychan/PowerfulViewLibrary//集合带删除、隐藏密码的editText和滚动文字的TextView；可展开收起的LinearLayout；简单的底部导航栏
+//    compile 'com.github.chaychan:PowerfulViewLibrary:1.2.1'
+
+    //bugly
+    //捕捉崩溃日志发送给邮件
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
+    compile 'com.tencent.bugly:crashreport:latest.release'
+
+    //图表库
+    compile 'com.github.lecho:hellocharts-android:v1.5.8'
+    compile 'com.android.support:design:26.1.0'
+    testCompile 'junit:junit:4.12'
+
+    //权限引导
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar'
+
+    //万能的下刷新与上啦加载
+    compile 'com.github.dkzwm:SmoothRefreshLayout:1.4.0'
+
+    //蓝牙连接的框架
+    compile 'com.inuker.bluetooth:library:1.4.0'
+
+//    //快速开发顶部、底部导航栏
+//    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+//    //滑动退出
+//    compile 'me.imid.swipebacklayout.lib:library:1.0.0'
+
+    //波纹
+    compile 'com.skyfishjy.ripplebackground:library:1.0.1'
+    compile project(path: ':shareutil')
+
+    //监测内存泄漏
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+    compile project(path: ':FlycoTabLayout_Lib')
+
+    //Http日志库
+    compile 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+}
+

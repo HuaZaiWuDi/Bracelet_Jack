@@ -1,0 +1,1 @@
+请使用AndroidStudio工具，作为module（非project）导入。

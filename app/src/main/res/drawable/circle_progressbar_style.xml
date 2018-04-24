@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 自定义圆形progressbar的颜色和图片 -->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:fromDegrees="0"
+    android:toDegrees="1440">
+    <shape android:shape="ring"
+        android:innerRadiusRatio="3"
+        android:thicknessRatio="12"
+        android:useLevel="false"
+        >
+
+        <gradient android:type="sweep"
+            android:useLevel="false"
+            android:startColor="#0F7D27"
+            android:endColor="#DFF3E3"
+            android:centerY="0.5"
+            android:centerColor="#00FF00"/>
+    </shape>
+
+</rotate>

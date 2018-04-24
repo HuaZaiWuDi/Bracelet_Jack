@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/bg_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/SexTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="150px"
+        android:text="请设置您的性别"
+        android:textSize="30dp" />
+
+
+    <ImageView
+        android:layout_marginTop="150px"
+        android:id="@+id/man"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_below="@id/SexTitle"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/man_select" />
+
+
+    <ImageView
+        android:src="@mipmap/woman_unselect"
+        android:id="@+id/woman"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_below="@id/man"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="150px" />
+
+
+</RelativeLayout>

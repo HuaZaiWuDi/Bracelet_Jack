@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/gray"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/img_qq"
+        android:layout_width="0px"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50px"
+        android:layout_weight="1"
+        android:src="@mipmap/ico_qqsign_482x" />
+
+    <ImageView
+        android:id="@+id/img_QQ_zone"
+        android:layout_width="0px"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@mipmap/qq_zone" />
+
+    <ImageView
+        android:id="@+id/img_WX"
+        android:layout_width="0px"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@mipmap/wx" />
+
+    <ImageView
+        android:id="@+id/img_friends"
+        android:layout_width="0px"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@mipmap/prant" />
+
+    <ImageView
+        android:id="@+id/img_weibo"
+        android:layout_width="0px"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@mipmap/weibo" />
+
+    <ImageView
+        android:id="@+id/img_download"
+        android:layout_width="0px"
+        android:layout_height="50dp"
+        android:layout_marginRight="30px"
+        android:layout_weight="1"
+        android:src="@mipmap/download" />
+
+
+</LinearLayout>

@@ -1,0 +1,298 @@
+<resources>
+    <string name="app_name">DXY-Bracelet</string>
+    <string name="bleBra">Ble Bracelet</string>
+
+    <string name="find">Sleep</string>
+    <string name="play">Play</string>
+    <string name="mine">Mine</string>
+    <string name="state">Sports</string>
+    <string name="heartRate">Heart Rate</string>
+    <string name="cancel">Cancel</string>
+    <string name="nextUpdate">Next update</string>
+    <string name="stepsCount">steps Count</string>
+    <string name="UserInfo">Personal information</string>
+    <string name="sleepDate">Sleep Time</string>
+    <string name="Intelligence">Intelligence Clock</string>
+    <string name="ok">Ok</string>
+
+    <string name="Mon">Mon</string>
+    <string name="Tue">Tue</string>
+    <string name="Wed">Wed</string>
+    <string name="Thu">Thu</string>
+    <string name="Fri">Fri</string>
+    <string name="Sat">Sat</string>
+    <string name="Sun">Sun</string>
+    <string name="Never">Once</string>
+    <string name="Every">Every</string>
+
+
+    <string-array name="bottomTitle">
+        <item>@string/state</item>
+        <item>@string/find</item>
+        <item>@id/hearRate</item>
+        <item>@string/play</item>
+        <item>@string/mine</item>
+    </string-array>
+
+    <string-array name="week">
+        <item>@string/Sun</item>
+        <item>@string/Mon</item>
+        <item>@string/Tue</item>
+        <item>@string/Wed</item>
+        <item>@string/Thu</item>
+        <item>@string/Fri</item>
+        <item>@string/Sat</item>
+
+
+    </string-array>
+
+    <string-array name="sports">
+        <item>Step distance</item>
+        <item>Energy consumption</item>
+        <item>Exercise duration</item>
+        <item>Today is goal</item>
+    </string-array>
+
+    <string-array name="sleep">
+        <item>Asleep Time</item>
+        <item>Restless Time</item>
+        <item>Awake Time</item>
+        <item>Sleep Quality</item>
+    </string-array>
+    <string-array name="setting">
+        <item>Set a sedentary reminder</item>
+        <item>Setting sleep data</item>
+        <item>Shake the camera mode</item>
+        <item>OTA Update</item>
+        <item>APP Update</item>
+        <item>Restore factory settings</item>
+        <item>About us</item>
+    </string-array>
+    <string-array name="ANCS">
+        <item>Call</item>
+        <item>whatsApp</item>
+        <item>SMS</item>
+        <item>WeChat</item>
+        <item>QQ</item>
+    </string-array>
+    <string-array name="function">
+        <item>Raise the bright screen</item>
+        <item>Interest screen reminder</item>
+        <item>Sedentary reminder</item>
+        <item>Anti lost reminder</item>
+        <item>Background disconnection</item>
+        <item>手环重启</item>
+        <item>Find Bracelet</item>
+        <item>Button photo</item>
+        <item>Shake and take a picture</item>
+    </string-array>
+
+
+    <string-array name="alarm_mode">
+        <item>没有事件</item>
+        <item>马达震动</item>
+        <item>LED闪烁(预留)</item>
+        <item>闹铃(预留)</item>
+    </string-array>
+
+    <string-array name="appPush">
+        <item>没有事件</item>
+        <item>点屏</item>
+        <item>马达震动</item>
+        <item>LED闪烁(预留)</item>
+        <item>闹铃(预留)</item>
+    </string-array>
+
+    <string-array name="negativeMarkArray">
+        <item>21:00</item>
+        <item>23:00</item>
+        <item>01:00</item>
+        <item>04:00</item>
+        <item>08:00</item>
+    </string-array>
+
+
+    <string-array name="user_sex">
+        <item>Man</item>
+        <item>Woman</item>
+    </string-array>
+
+
+    <string name="bleClose">Bluetooth has Close. Please open it and reconnect</string>
+    <string name="bleCloseAndScan">Bluetooth has Close. Please open it and scan</string>
+    <string name="barIsDisconnect">Bracelet disconnection!!! Click search for new devices</string>
+    <string name="disConnect_reConnect">Stop reconnection, please reconnect search devices</string>
+    <string name="barNoNear">Bracelet is not around, pay attention to anti lost!!</string>
+    <string name="Beyond_connection_distance">Beyond connection distance</string>
+    <string name="reconnecting">Reconnecting</string>
+    <string name="connecting">Connecting</string>
+    <string name="reconnect_success">Reconnect Success</string>
+    <string name="startScan">Start Scan</string>
+    <string name="stopScan">Stop Scan</string>
+    <string name="timeOutScan">Scan timeOut</string>
+    <string name="doFail_reconnect">Operation failed , reconnection</string>
+    <string name="barConnect">Bracelet has been connected</string>
+    <string name="barDisConnect">Bracelet has not been connected</string>
+    <string name="bra_disconnect">Bracelet has been disconnected</string>
+
+    <string name="settingAlarmSuccess">Set success</string>
+    <string name="alarm_set_up">Bracelet can only set up%1$d alarm clock</string>
+    <string name="settingAlarmFail2">Set the same time, please modify the alarm clock time</string>
+    <string name="settingAlarm">Setting Clock</string>
+    <string name="synAlarm">Synchronous alarm clock</string>
+    <string name="SDNoUse">Cannot get SD card storage</string>
+
+
+    <string name="rice">rice</string>
+    <string name="openLoactionpermission">Must be given permission to scan the positioning Bracelet oh</string>
+    <string name="NoNet">There is no network signal</string>
+    <string name="settingNet">Please set up the network signal</string>
+
+    <string name="deleteSuccess">Delete Success</string>
+
+    <string name="settingUserInfo">Please set gender</string>
+    <string name="settingHeight">Please set height</string>
+    <string name="settingWeight">Please set weight</string>
+    <string name="settingAge">Please set age</string>
+    <string name="settingSteps">Please set the target steps</string>
+
+    <string name="hint">hint</string>
+    <string name="isDelete">Delete?</string>
+
+    <string name="on">On</string>
+    <string name="off">Off</string>
+
+    <string name="appscan">App二维码</string>
+    <string name="Sacn_QR_code">download App</string>
+
+    <string name="findNewVersion">Find new version</string>
+    <string name="downloadapp">download app</string>
+    <string name="downloadbin">download ota</string>
+    <string name="otaMessage">The OTA upgrade will restart the bracelet, may be lost step information
+      Version information:</string>
+    <string name="wait_download">wait downloading</string>
+
+    <string name="load_fail">Update fail</string>
+    <string name="load_success">Update Success</string>
+
+    <string name="applicationInfo">Version information:%1$s \nVersion number:%2$s\nNew version size:%3$s M</string>
+    <string name="restartFactory">Restoring factory settings</string>
+    <string name="news_version">It is the latest edition</string>
+    <string name="network_fail">Networking failure</string>
+
+
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="unBind">unBind Bracelet </string>
+
+    <string name="nameisLong">Input too long</string>
+    <string name="InputTrue">Please enter the correct value</string>
+    <string name="InputSuccess">Input Success</string>
+    <string name="InputFail">Input Fail</string>
+
+    <string name="NoPermission">Not Permission</string>
+
+    <string name="sleepMessage">\t\tThe most ideal sleep time is 9 pm to 2 points, this is because people sleep about every two hours for a day, the first day slept sink, second slightly shallow, third, section fourth is more shallow, and the first two day four hours of sleep accounted for 75% of total amount of sleep
+. It is also necessary to take a nap every day. Napping is very beneficial to eliminate fatigue and improve health. The first self-care measure is usually about half an hour, otherwise it will affect the sleep at night</string>
+    <string name="sleepStatusBad">Bad</string>
+    <string name="sleepStatusFine">Fine</string>
+    <string name="sleepStatusGood">Good</string>
+    <string name="sleepQuality">Sleep quality：%1$s</string>
+
+    <string name="function">function</string>
+    <string name="modular">modular</string>
+    <string name="uninstall">This application is not installed. Please install it and then open it</string>
+    <string name="SimNoUse">The phone card cannot be used. Please insert a valid phone card after the open</string>
+
+    <string name="ANCS_Message">Use notification alerts to open the application notification bar management
+For example: to receive QQ messages, you need to open the QQ message reminder function
+If the opening also did not receive the message, try to restart the mobile phone
+    </string>
+
+    <string name="startTime">Start Time</string>
+    <string name="endTime">End Time</string>
+    <string name="sex">sex</string>
+    <string name="age">age</string>
+    <string name="height">height</string>
+    <string name="weight">weight</string>
+    <string name="stepsArm">Sports Arm</string>
+    <string name="stepsData">Steps Data</string>
+    <string name="sleepData">Sleep Data</string>
+    <string name="steps">steps</string>
+    <string name="score">score</string>
+    <string name="stepsTime">Sports Time</string>
+    <string name="stepsKm">Sports mileage</string>
+    <string name="stepsKcal">Sports consume</string>
+    <string name="startSleep">fall asleep</string>
+    <string name="endSleep">wake</string>
+    <string name="aSleep">aSleep</string>
+    <string name="todaySteps">Moving steps today</string>
+    <string name="factoryAPP">Do you want to restore factory settings?
+Factory settings will clear app saved user information, and change Bracelet MAC address</string>
+    <string name="tackPhoto">Taking photos</string>
+
+    <string name="Today">Today</string>
+    <string name="noSleepData">Not Sleep Data</string>
+    <string name="day">day</string>
+    <string name="week">week</string>
+    <string name="month">month</string>
+    <string name="SleepTips">Sleep Tips</string>
+    <string name="daySteps">Average day steps</string>
+    <string name="TotalKm">Total kilometer</string>
+    <string name="Standard">Standard days</string>
+    <string name="AddDevice">Find Device</string>
+    <string name="myDevice">My Device</string>
+    <string name="ChooseWeek">Choose week</string>
+    <string name="addClock">Add Clock</string>
+    <string name="changeByAlbum">Choose By Album</string>
+    <string name="takePhoto">Take Photo</string>
+    <string name="settingSed">Set a sedentary reminder</string>
+    <string name="settingFail">Setting fail</string>
+    <string name="downloadSuccess">Download success</string>
+    <string name="shareSuccess">Share Success</string>
+    <string name="shareFail">Share Fail</string>
+    <string name="hour">hour</string>
+    <string name="min">min</string>
+    <string name="stepsSuccess">goal has been completed</string>
+    <string name="sleepDataWait">The data is acquired after the sleep time is over</string>
+    <string name="sleepDataWaitAndRevise">Now it is sleep monitoring time, and sleep data will be retrieved if you still have to modify it</string>
+    <string name="sleepDataError">Sleep time should not be set between%1$d a.m. and%2$d PM</string>
+    <string name="callOurs">Call us: %1$s \nEmail Address: %2$s</string>
+    <string name="sleepNoSame">Sleep time can not be the same</string>
+    <string name="startBeforeEnd">The starting time cannot end before the time</string>
+    <string name="NoWearBra">Not wearing Bracelet</string>
+    <string name="autoConnect">AutoConnect</string>
+    <string name="connectOnce">Connect once</string>
+    <string name="heartRateUnit">times/min</string>
+    <string name="aboutUs">About us</string>
+    <string name="help">Help</string>
+    <string name="Photograph">Take a Photo</string>
+    <string name="ChoosePhotographMode">Choose Photograph Mode </string>
+    <string name="keyPhotograph">Key Photograph</string>
+    <string name="shakePhotograph">Shake Photograph</string>
+    <string name="choosePhoto">Choose Heard Image</string>
+    <string name="choosePhotoMode">Please Choose Heard Image Mode</string>
+
+    <string-array name="about">
+        <item>APP Update</item>
+        <item>OTA Update</item>
+        <item>Restore factory settings</item>
+        <item>@string/aboutUs</item>
+    </string-array>
+
+    <string name="DistanceTime">There are%1$d hours%2$d minutes from the alarm clock</string>
+
+    <string name="dynamicHeart">Dynamic heart rate</string>
+    <string name="staticHeart">Resting Heart Rate</string>
+    <string name="averageHeart">Mean heart rate</string>
+
+    <string name="startSynData">Start synchronization data</string>
+    <string name="synDataSuccess">Synchronization data completion</string>
+    <string name="heartRateData">Heart Rate Data</string>
+    <string name="asleepTime">Asleep Time</string>
+    <string name="restlessTime">Restless Time</string>
+    <string name="awakeTime">Awake Time</string>
+    <string name="noChange">Not Change</string>
+</resources>

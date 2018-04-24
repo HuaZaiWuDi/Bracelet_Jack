@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="androidannotations-3.3.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../app/libs/androidannotations-3.3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/androidannotations-3.3.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
