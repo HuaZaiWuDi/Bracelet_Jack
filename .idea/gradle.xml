@@ -5,16 +5,6 @@
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/FlycoTabLayout_Lib" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/odenble" />
-            <option value="$PROJECT_DIR$/ota_module" />
-            <option value="$PROJECT_DIR$/shareutil" />
-          </set>
-        </option>
         <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
